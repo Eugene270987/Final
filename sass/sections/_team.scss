@@ -1,0 +1,140 @@
+.team{
+
+  &__section-title{
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    color: var(--activeRegular);
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  &__section-link{
+    display: flex;
+    align-items: center;
+
+    &:visited {
+      color: var(--activeRegular);
+    }
+
+    &:active{
+      color: var(--accentActive);
+      svg{
+        path{
+          stroke: var(--accentActive);
+        }
+      }
+    }
+  }
+
+  &__member{
+    border-radius: 12px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    background: var(--backgroundSectionGray);
+
+    &-bg{
+      background: url("../../img/member.png") center / cover no-repeat;
+      min-width: 315px;
+      width: 100%;
+      height: 500px;
+      border-radius: 12px 12px 0 0;
+    }
+    &-title{
+      font-size: 30px;
+      width: 100%;
+      padding: 0 30px;
+      margin-bottom: 30px;
+      background: var(--activeBgText);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    &-name,
+    &-desc{
+      color: var(--greyText);
+      padding-left: 30px;
+    }
+    &-name{
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    &-desc{
+      line-height: 1.6;
+    }
+  }
+
+  &__bullets{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 520px) {
+}
+
+@media screen and (min-width: 767px) {
+  .team{
+    padding-top: 60px;
+    &__member{
+      &-bg{
+        min-width: 400px;
+        height: 600px;
+      }
+      &-title{
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .team{
+    &__member{
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      gap: 30px;
+      align-items: center;
+      &-bg{
+        height: 528px;
+      }
+    }
+
+    &__section-link{
+      &:hover{
+        color: var(--accentActive);
+        svg {
+          path {
+            stroke: var(--accentActive);
+          }
+        }
+      }
+      &:active{
+        background: var(--activeBgText);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .team {
+    &__section-title{
+      padding-top: 0;
+    }
+    &__member {
+      &-bg {
+        height: 344px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+}

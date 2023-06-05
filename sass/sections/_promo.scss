@@ -1,0 +1,74 @@
+.promo{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: url("../../img/Symbol.png") center / contain no-repeat;
+  position: relative;
+
+  &__title{
+    margin-left: 10px;
+    padding-top: 180px;
+    width: 100%;
+    max-width: 315px;
+    font-size: 38px;
+    color: var(--basicWhite);
+    margin-bottom: 159px;
+  }
+  &__link{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    &:active{
+      svg{
+        circle{
+          stroke: var(--accentActive);
+        }
+        path{
+          fill: var(--accentActive);
+          stroke: var(--accentActive);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .promo{
+    &__title{
+      margin-left: 70px;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .promo{
+    &__title{
+      max-width:100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .promo{
+    &__link{
+      &:hover{
+        svg {
+          circle {
+            stroke: var(--accentActive);
+          }
+          path{
+            stroke: var(--accentActive);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1920px) {
+}

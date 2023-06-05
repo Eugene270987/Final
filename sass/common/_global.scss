@@ -1,0 +1,65 @@
+body{
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex: 1 1 auto;
+}
+
+.wrapper-bg{
+  background: var(--backgroundMain);
+  border-radius: 0 0 12px 12px;
+}
+
+h1, h2, h3, h4, h5,h6{
+  font-size: inherit;
+}
+
+.container{
+  padding-left: calc(50vw - 172px);
+  padding-right: calc(50vw - 172px);
+
+  @media screen and (min-width: 520px) {
+    padding-left: calc(50vw - 230px);
+    padding-right: calc(50vw - 230px);
+  }
+
+  @media screen and (min-width: 767px) {
+    padding-left: calc(50vw - 323px);
+    padding-right: calc(50vw - 323px);
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-left: calc(50vw - 452px);
+    padding-right: calc(50vw - 452px);
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: calc(50vw - 660px);
+    padding-right: calc(50vw - 660px);
+  }
+
+  @media screen and (min-width: 1920px) {
+    padding-left: calc(50vw - 800px);
+    padding-right: calc(50vw - 800px);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,116 @@
+.partners{
+  padding-top: 60px;
+  &__title{
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--mainRegular);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+
+    &-item{
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      &:first-child{
+        padding: 36px 0;
+        background-color: #1C4280;
+      }
+      &:nth-child(2){
+        background-color: #143646;
+        padding: 44px 0;
+      }
+      &:nth-child(3){
+        background-color: #F48B30;
+        padding: 38px 0;
+      }
+      &:nth-child(4){
+        background-color: #9E4DC3;
+        padding: 39px 0;
+      }
+      &:nth-child(5){
+        background-color: #FD9339;
+        padding: 38px 0;
+      }
+      &:nth-child(6){
+        background-color: #E2E2E4;
+        padding: 36px 0;
+      }
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9),
+      &:nth-child(10),
+      &:nth-child(11),
+      &:last-child{
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+}
+
+@media screen and (min-width: 767px) {
+  .partners{
+    &__grid{
+      grid-template-columns: repeat(3, 1fr);
+
+      &-item{
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10),
+        &:nth-child(11),
+        &:last-child{
+          display: grid;
+        }
+        &:nth-child(7){
+          background-color: #C71C36;
+          padding: 29px 0 30px;
+        }
+        &:nth-child(8){
+          background-color: #DCF3F9;
+          padding: 22px 0;
+        }
+        &:nth-child(9){
+          background-color: #EAEAEA;
+          padding: 30px 0;
+        }
+        &:nth-child(10){
+          background-color: #282240;
+          padding: 41px 0;
+        }
+        &:nth-child(11){
+          background-color: #1D4568;
+          padding: 37px 0;
+        }
+        &:last-child{
+          background-color: #000000;
+          padding: 12px 0 13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .partners {
+    &__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1920px) {
+}

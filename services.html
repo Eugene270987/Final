@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services</title>
+    <link rel="stylesheet" href="css/servicespage.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__top-bar">
+        <div class="header__language-menu">
+            <a href="#" aria-label="Ukrainian">ук</a>
+            <a href="#" aria-label="Russian">ру</a>
+            <a href="#" aria-label="English">en</a>
+        </div>
+        <svg class="icon">
+            <use xlink:href="img/sprite.svg#separator"></use>
+        </svg>
+        <a href="#" class="header__address">Kyiv, Mechnikova str., 14/1</a>
+        <svg class="icon">
+            <use xlink:href="img/sprite.svg#separator"></use>
+        </svg>
+        <a class="header__contacts" href="tel:0800211927" aria-label="0800211927">0800 211 927</a>
+        <svg class="icon">
+            <use xlink:href="img/sprite.svg#separator"></use>
+        </svg>
+        <a class="facebook__link" href="#" aria-label="our facebook">
+            <svg class="icon__facebook">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="header__menu">
+        <a href="#">
+            <img src="/img/Logo.svg" alt="Hlegal-logo">
+        </a>
+        <input type="checkbox" id="nav-toggle" class="visually-hidden">
+        <nav class="header__navbar">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar__link">about us</a>
+                </li>
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar__link">services</a>
+                </li>
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar__link">team</a>
+                </li>
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar__link">publications</a>
+                </li>
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar__link">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-switch">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+</header>
+<main class="main">
+    <section class="services__promo container">
+        <article class="services__main">
+            <img
+                    class="services__main-logo"
+                    src="img/Ecommerce.svg"
+                    alt="ecommerce-logo"
+            />
+            <h1 class="services__main-title">IT and e-commerce</h1>
+            <p class="services__main-desc">
+                An endless stream of contracts, tax issues, labor relations,
+                corporate papers - legal work distracts you from doing business. But
+                there is not much work to do to hire an in-house lawyer.
+            </p>
+            <p class="services__main-desc">
+                In addition, over time, the work will become the same type and
+                uninteresting for a full-time lawyer. And we know very well how
+                difficult it is to find a good candidate with experience in the
+                field of information technology in Ukraine.
+            </p>
+            <button class="btn" type="button">Free consultation</button>
+            <div class="modal">
+                <div class="modal__box">
+                    <h2 class="modal__box-title">We would like to help you</h2>
+                    <form method="post" action="#">
+                        <label>
+                            <input class="username" type="text" name="username" placeholder="Name">
+                        </label>
+                        <label>
+                            <textarea class="message" name="message" placeholder="Message"></textarea>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </article>
+        <article class="services__open">
+            <h2 class="services__open-title">Services in this area:</h2>
+            <ul class="services__open-list">
+                <div class="services__open-basis">
+                    <li class="services__open-list-item">
+                        support of investment projects for the development of port
+                        infrastructure;
+                    </li>
+                    <li class="services__open-list-item">
+                        certification of GTS, entering information about them in mandatory
+                        databases and registers;
+                    </li>
+                    <li class="services__open-list-item">
+                        registration of permits for the construction of port terminals;
+                    </li>
+                    <li class="services__open-list-item">
+                        registration of permit and other mandatory documentation required
+                        for carrying out activities in the port (emission permit,
+                        conclusion on EIA, RTC, etc.);
+                    </li>
+                </div>
+                <div class="services__open-basis">
+                    <li class="services__open-list-item">
+                        support of procedures related to the lease of state property in
+                        the port;
+                    </li>
+                    <li class="services__open-list-item">
+                        support of procedures related to confirmation of the status of
+                        port operator, maritime agent, foreign sailing line;
+                    </li>
+                    <li class="services__open-list-item">
+                        support of procedures related to the inclusion of the company
+                        within the port;
+                    </li>
+                    <li class="services__open-list-item">
+                        appeals against actions related to the illegal imposition of
+                        services in the port by monopoly companies.
+                    </li>
+                </div>
+            </ul>
+        </article>
+    </section>
+    <section class="publications container">
+        <h3 class="publications__page-title">
+            <a class="publications__page-link" href="#">
+                publications
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
+                </svg>
+            </a>
+        </h3>
+        <h2 class="publications__title">We have something to tell</h2>
+        <!-- Grid-Container -->
+        <div class="publications__grid">
+            <!-- Grid Items -->
+            <article class="publications__article">
+                <img class="publications__article-img" src="img/tablets.png" alt="tablets" />
+                <h4 class="publications__article-title">
+                    <a class="publications__article-link" href="#">Equity associate</a>
+                </h4>
+                <span class="publications__article-date">April 22</span>
+                <p class="publications__article-desc">
+                    I'm a jun on projects. I am a co-owner of a law firm. How it
+                    happened. Before entering my parents told me that if I…
+                </p>
+            </article>
+
+            <article class="publications__article">
+                <img class="publications__article-img" src="img/gdpr.png" alt="GDPR" />
+                <h4 class="publications__article-title">
+                    <a class="publications__article-link" href="#">Penalty for the Good Corporation: what will happen to Google and
+                        others for violating the GDPR
+                    </a>
+                </h4>
+                <span class="publications__article-date">September 29</span>
+                <p class="publications__article-desc">
+                    And why the recovery of 50 million euros could be a fateful
+                    precedent According to Mind.ua January 21 National Commission for
+                    Data Protection.
+                </p>
+            </article>
+
+            <article class="publications__article">
+                <img class="publications__article-img" src="img/vloggers.png" alt="vloggers" />
+                <h4 class="publications__article-title">
+                    <a class="publications__article-link" href="#">Millennial Testament</a>
+                </h4>
+                <span class="publications__article-date">August 19</span>
+                <p class="publications__article-desc">
+                    What and how modern vloggers, opinion leaders and
+                    crypto-millionaires will inherit A typical legacy of the Ukrainian
+                    generation X looks like this: an apartment in…
+                </p>
+            </article>
+        </div>
+    </section>
+</main>
+<footer class="footer container">
+    <ul class="footer__menu">
+        <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Kyiv, Mechnikova str., 14/1</a>
+        </li>
+        <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">on map</a>
+        </li>
+        <li class="footer__menu-item">
+            <a class="footer__menu-link footer__facebook-link" href="#"></a>
+        </li>
+        <li class="footer__menu-item">
+            <a href="tel:0800211927" class="footer__menu-link">0800 211 927</a>
+        </li>
+        <li class="footer__menu-item">
+            <a class="footer__menu-link" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+        </li>
+        <li class="footer__menu-item">
+            © 2021 HLEGAL Law company, LLC
+        </li>
+    </ul>
+</footer>
+</body>
+</html>

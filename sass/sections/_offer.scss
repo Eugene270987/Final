@@ -1,0 +1,123 @@
+.offer{
+  padding-top: 30px;
+
+  &__container{
+    overflow-x: auto;
+  }
+  &__menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    &-item{
+      white-space: nowrap;
+      padding-bottom: 30px;
+      font-size: 30px;
+      color: var(--greyText);
+      font-weight: 700;
+      width: 100%;
+      &:first-child{
+        background: var(--activeBgText);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+  }
+  &__title{
+    padding-top: 34px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--basicWhite);
+    margin-bottom: 30px;
+  }
+
+  &__desc{
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--basicWhite);
+  }
+}
+
+
+@media screen and (min-width: 520px) {
+}
+
+@media screen and (min-width: 767px) {
+  .offer{
+    &__title{
+      font-size: 30px;
+    }
+    &__menu{
+      &-item{
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .offer{
+    display: flex;
+    justify-content: space-around;
+    &__title{
+      padding-top: 0;
+    }
+
+    &__info{
+      display: flex;
+      flex-direction: column;
+      max-width: 405px;
+      width: 100%;
+      margin-left: 45px;
+      position: relative;
+
+      &:before{
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 300px;
+        top: 0;
+        left: -50px;
+        background: rgba(255, 255, 255, 0.3);
+      }
+    }
+    &__container{
+      overflow-x: visible;
+      margin-right: 45px;
+    }
+    &__menu{
+      flex-direction: column;
+      &-item{
+        padding-bottom: 0;
+        &:hover{
+          color: var(--accentActive);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .offer{
+    &__info{
+      justify-content: center;
+      max-width: 850px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .offer{
+    &__container{
+      margin-right: 0;
+    }
+    &__info{
+      margin-left: 0;
+      max-width: 920px;
+
+      &:before{
+        left: -70px;
+      }
+    }
+  }
+}

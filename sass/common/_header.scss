@@ -1,0 +1,71 @@
+.header{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: var(--basicWhite);
+  font-weight: 700;
+  z-index: 5;
+
+  &__top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(245, 245, 250, 0.2);
+    width: 100%;
+    padding: 15px;
+    top: 0;
+    left: 0;
+  }
+
+  &__language-menu{
+    a{
+      padding: 5px 7px;
+      font-size: 12px;
+      text-transform: uppercase;
+
+      &:active{
+        background: var(--accentActive);
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &__contacts{
+
+    &:active{
+      color: var(--accentActive);
+    }
+  }
+
+  &__address{
+   display: none;
+  }
+
+
+  &__menu{
+    display: flex;
+    gap: 4px;
+    padding: 15px;
+  }
+
+  &__navbar{
+   display: none;
+  }
+}
+
+.icon{
+  display: none;
+  width: 6px;
+  height: 6px;
+
+  &__facebook{
+   display: none;
+   width: 24px;
+   height: 24px;
+  }
+}
+
+.facebook__link{
+  display: none;
+}
