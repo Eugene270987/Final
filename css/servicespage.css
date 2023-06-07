@@ -283,6 +283,21 @@ button:-moz-focusring,
   text-decoration: underline;
 }
 
+.btn__send {
+  width: calc(100vw - 60px);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 18px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--basicWhite);
+  background: var(--activeRegular);
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -608,6 +623,89 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 160px;
   }
 }
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+  background: var(--mainRegular);
+}
+.modal__box {
+  height: 100vh;
+  width: 100%;
+  padding: 30px;
+  z-index: 1;
+  background: var(--backgroundSectionGray);
+}
+.modal__box-title {
+  max-width: 273px;
+  width: 100%;
+  text-align: start;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 30px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.modal__box form {
+  display: flex;
+  flex-direction: column;
+}
+.modal__box form .username {
+  width: calc(100vw - 60px);
+  border-radius: 8px;
+  border: 1px solid var(--basicWhite);
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  height: 56px;
+}
+.modal__box form .username::placeholder {
+  color: var(--greyText);
+  padding-left: 15px;
+}
+.modal__box form .message {
+  border: 1px solid var(--basicWhite);
+  resize: none;
+  width: calc(100vw - 60px);
+  height: 130px;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.modal__box form .message::placeholder {
+  color: var(--greyText);
+  padding: 15px 0 0 15px;
+}
+.modal__box form .title {
+  color: var(--greyText);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: start;
+  margin-bottom: 15px;
+}
+.modal__box form .phone__number,
+.modal__box form .email {
+  width: calc(100vw - 60px);
+  border-radius: 8px;
+  border: 1px solid var(--basicWhite);
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  height: 56px;
+}
+.modal__box form .phone__number::placeholder,
+.modal__box form .email::placeholder {
+  color: var(--greyText);
+  padding-left: 15px;
+}
+
 .services__promo {
   background: var(--backgroundMain);
   border-radius: 0 0 12px 12px;
@@ -694,31 +792,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 12px;
   left: 0;
   margin-left: -8px;
-}
-
-.modal {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 99999;
-  background: var(--mainRegular);
-}
-.modal__box {
-  width: 100%;
-  max-width: 400px;
-  padding: 30px;
-  z-index: 1;
-  background: var(--backgroundSectionGray);
-}
-.modal__box form {
-  display: flex;
-  flex-direction: column;
-}
-
-.message {
-  resize: none;
 }
 
 @media screen and (min-width: 767px) {
@@ -950,7 +1023,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--accentActive);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1024px) {
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;

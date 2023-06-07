@@ -15,3 +15,18 @@
     text-decoration: underline;
   }
 }
+
+.btn__send{
+  width: calc(100vw - 60px);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 18px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--basicWhite);
+  background: var(--activeRegular);
+  border-radius: 12px;
+  margin-top: 15px;
+}

@@ -1,0 +1,95 @@
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+  background: var(--mainRegular);
+  &__box{
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+    z-index: 1;
+    background: var(--backgroundSectionGray);
+    &-title{
+      max-width: 273px;
+      width: 100%;
+      text-align: start;
+      font-size: 30px;
+      font-weight: 700;
+      padding-bottom: 30px;
+      background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      .username{
+        width: calc(100vw - 60px);
+        border-radius: 8px;
+        border: 1px solid var(--basicWhite);
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 15px;
+        height: 56px;
+        &::placeholder{
+          color: var(--greyText);
+          padding-left: 15px;
+        }
+      }
+      .message{
+        border: 1px solid var(--basicWhite);
+        resize: none;
+        width: calc(100vw - 60px);
+        height: 130px;
+        font-size: 16px;
+        line-height: 26px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        &::placeholder{
+          color: var(--greyText);
+          padding: 15px 0 0 15px;
+        }
+      }
+      .title{
+        color: var(--greyText);
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: start;
+        margin-bottom: 15px;
+      }
+
+      .phone__number,
+      .email{
+        width: calc(100vw - 60px);
+        border-radius: 8px;
+        border: 1px solid var(--basicWhite);
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 15px;
+        height: 56px;
+        &::placeholder{
+          color: var(--greyText);
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+}
+@media screen and (min-width: 767px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1440px) {
+}
+@media screen and (min-width: 1920px) {
+}
+
+

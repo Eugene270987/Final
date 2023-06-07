@@ -139,6 +139,14 @@
                         <label>
                             <textarea class="message" name="message" placeholder="Message"></textarea>
                         </label>
+                        <h3 class="title">How to answer you?</h3>
+                        <label>
+                            <input type="number" class="phone__number" placeholder="Phone number">
+                        </label>
+                        <label>
+                            <input type="text" class="email" placeholder="Email">
+                        </label>
+                        <button class="btn__send">Send message</button>
                     </form>
                 </div>
             </div>
@@ -241,26 +249,47 @@
     </section>
 </main>
 <footer class="footer container">
-    <ul class="footer__menu">
-        <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">Kyiv, Mechnikova str., 14/1</a>
-        </li>
-        <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">on map</a>
-        </li>
-        <li class="footer__menu-item">
-            <a class="footer__menu-link footer__facebook-link" href="#"></a>
-        </li>
-        <li class="footer__menu-item">
-            <a href="tel:0800211927" class="footer__menu-link">0800 211 927</a>
-        </li>
-        <li class="footer__menu-item">
-            <a class="footer__menu-link" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
-        </li>
-        <li class="footer__menu-item">
-            © 2021 HLEGAL Law company, LLC
-        </li>
-    </ul>
+    <div class="footer__address">
+        <ul class="footer__address-menu">
+            <li class="footer__address-menu-item">
+                <a class="footer__address-menu-item-link" href="#">Kyiv, Mechnikova str., 14/1</a>
+            </li>
+            <li class="footer__address-menu-item">
+                <a class="footer__address-menu-item-link" href="#">on map</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__rights">
+        <ul class="footer-rights-menu">
+            <li class="footer__rights-menu-item">
+                © 2021 HLEGAL Law company, LLC
+            </li>
+        </ul>
+    </div>
+    <div class="footer__contacts">
+        <ul class="footer__contacts-menu">
+            <li class="footer__contacts-menu-item">
+                <a class="footer__contacts-menu-item-link" href="#">
+                    <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_103350_3463)">
+                            <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z" fill="#24A3FF"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_103350_3463">
+                                <rect width="38" height="38" fill="white" transform="translate(0.5)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__contacts-menu-item">
+                <a href="tel:0800211927" class="footer__contacts-menu-item-link">0800 211 927</a>
+            </li>
+            <li class="footer__contacts-menu-item">
+                <a class="footer__contacts-menu-item-link" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+            </li>
+        </ul>
+    </div>
 </footer>
 </body>
 </html>
