@@ -128,9 +128,15 @@
                 difficult it is to find a good candidate with experience in the
                 field of information technology in Ukraine.
             </p>
-            <button class="btn" type="button">Free consultation</button>
-            <div class="modal">
+            <button id="open-modal-btn" class="btn" type="button">Free consultation</button>
+            <div class="modal" id="my-modal">
                 <div class="modal__box">
+                    <button class="btn__close" id="close-my-modal-btn">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                        </svg>
+                    </button>
                     <h2 class="modal__box-title">We would like to help you</h2>
                     <form method="post" action="#">
                         <label>
@@ -141,12 +147,12 @@
                         </label>
                         <h3 class="title">How to answer you?</h3>
                         <label>
-                            <input type="number" class="phone__number" placeholder="Phone number">
+                            <input type="text" class="phone__number" placeholder="Phone number">
                         </label>
                         <label>
                             <input type="text" class="email" placeholder="Email">
                         </label>
-                        <button class="btn__send">Send message</button>
+                        <button id="send-information" class="btn__send">Send message</button>
                     </form>
                 </div>
             </div>
@@ -291,5 +297,6 @@
         </ul>
     </div>
 </footer>
+<script src="js/servicespage.js"></script>
 </body>
 </html>
