@@ -10,50 +10,94 @@
 </head>
 <body>
 <header class="header">
-    <div class="header__top-bar">
-        <div class="header__language-menu">
-            <a href="#" aria-label="Ukrainian">ук</a>
-            <a href="#" aria-label="Russian">ру</a>
-            <a href="#" aria-label="English">en</a>
-        </div>
-        <svg class="icon">
-            <use xlink:href="img/sprite.svg#separator"></use>
-        </svg>
-        <a href="#" class="header__address">Kyiv, Mechnikova str., 14/1</a>
-        <svg class="icon">
-            <use xlink:href="img/sprite.svg#separator"></use>
-        </svg>
-        <a class="header__contacts" href="tel:0800211927" aria-label="0800211927">0800 211 927</a>
-        <svg class="icon">
-            <use xlink:href="img/sprite.svg#separator"></use>
-        </svg>
-        <a class="facebook__link" href="#" aria-label="our facebook">
-            <svg class="icon__facebook">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-            </svg>
-        </a>
-    </div>
+    <a class="header__menu-link" href="index.html">
+        <img class="header__menu-logo" src="img/logo.png" alt="Hlegal-logo">
+    </a>
+    <ul class="header__top-menu">
+        <li>
+            <ul class="header__top-menu-language">
+                <li class="header__top-menu-language-item">
+                    <a
+                            class="header__top-menu-language-link"
+                            href="#"
+                            aria-label="Ukrainian"
+                    >ук</a>
+                </li>
+                <li class="header__top-menu-language-item">
+                    <a
+                            class="header__top-menu-language-link"
+                            href="#"
+                            aria-label="Russian"
+                    >ру</a
+                    >
+                </li>
+                <li class="header__top-menu-language-item">
+                    <a
+                            class="header__top-menu-language-link"
+                            href="#"
+                            aria-label="English"
+                    >en</a
+                    >
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="header__top-menu-contacts">
+                <li class="header__top-menu-contacts-item">
+                    <a href="#" class="header__top-menu-contacts-link"
+                    >Kyiv, Mechnikova str., 14/1</a
+                    >
+                </li>
+                <li class="header__top-menu-contacts-item">
+                    <a
+                            class="header__top-menu-contacts-link"
+                            href="tel:0800211927"
+                            aria-label="0800211927"
+                    >
+                        0800 211 927
+                    </a>
+                </li>
+                <li class="header__top-menu-contacts-item">
+                    <a
+                            class="header__top-menu-contacts-link"
+                            href="#"
+                            aria-label="our facebook"
+                    >
+                        <svg
+                                width="24"
+                                height="25"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                    d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                    fill="white"
+                            />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
     <div class="header__menu">
-        <a href="#">
-            <img src="img/logo.svg" alt="Hlegal-logo">
-        </a>
         <input type="checkbox" id="nav-toggle" class="visually-hidden">
-        <nav class="header__navbar">
-            <ul class="header__navbar-list">
-                <li class="header__navbar-item">
-                    <a href="" class="header__navbar__link">about us</a>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__list-item">
+                    <a href="" class="navbar__list-link">about us</a>
                 </li>
-                <li class="header__navbar-item">
-                    <a href="" class="header__navbar__link">services</a>
+                <li class="navbar__list-item">
+                    <a href="services.html" class="navbar__list-link">services</a>
                 </li>
-                <li class="header__navbar-item">
-                    <a href="" class="header__navbar__link">team</a>
+                <li class="navbar__list-item">
+                    <a href="" class="navbar__list-link">team</a>
                 </li>
-                <li class="header__navbar-item">
-                    <a href="" class="header__navbar__link">publications</a>
+                <li class="navbar__list-item">
+                    <a href="" class="navbar__list-link">publications</a>
                 </li>
-                <li class="header__navbar-item">
-                    <a href="" class="header__navbar__link">contact</a>
+                <li class="navbar__list-item">
+                    <a href="" class="navbar__list-link">contact</a>
                 </li>
             </ul>
         </nav>
@@ -68,7 +112,7 @@
     <div class="wrapper-bg">
         <section class="promo container">
             <h1 class="promo__title">you legal solutions provider</h1>
-            <a class="promo__link" href="#">
+            <a class="promo__link" href="#offer-section">
                 <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_22728_11339)">
                         <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
@@ -82,7 +126,7 @@
                 </svg>
             </a>
         </section>
-        <section class="offer container">
+        <section class="offer container" id="offer-section">
             <div class="offer__container">
                 <ul class="offer__menu">
                     <li class="offer__menu-item">Consistent</li>
@@ -405,26 +449,47 @@
     </section>
 </main>
 <footer class="footer container">
-    <ul class="footer__menu">
-        <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">Kyiv, Mechnikova str., 14/1</a>
-        </li>
-        <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">on map</a>
-        </li>
-        <li class="footer__menu-item">
-            <a class="footer__menu-link footer__facebook-link" href="#"></a>
-        </li>
-        <li class="footer__menu-item">
-            <a href="tel:0800211927" class="footer__menu-link">0800 211 927</a>
-        </li>
-        <li class="footer__menu-item">
-            <a class="footer__menu-link" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
-        </li>
-        <li class="footer__menu-item">
-            © 2021 HLEGAL Law company, LLC
-        </li>
-    </ul>
+    <div class="footer__address">
+        <ul class="footer__address-menu">
+            <li class="footer__address-menu-item">
+                <a class="footer__address-menu-item-link" href="#">Kyiv, Mechnikova str., 14/1</a>
+            </li>
+            <li class="footer__address-menu-item">
+                <a class="footer__address-menu-item-link" href="#">on map</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__rights">
+        <ul class="footer-rights-menu">
+            <li class="footer__rights-menu-item">
+                © 2021 HLEGAL Law company, LLC
+            </li>
+        </ul>
+    </div>
+    <div class="footer__contacts">
+        <ul class="footer__contacts-menu">
+            <li class="footer__contacts-menu-item">
+                <a class="footer__contacts-menu-item-link" href="#">
+                    <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_103350_3463)">
+                            <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z" fill="#24A3FF"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_103350_3463">
+                                <rect width="38" height="38" fill="white" transform="translate(0.5)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__contacts-menu-item">
+                <a href="tel:0800211927" class="footer__contacts-menu-item-link">0800 211 927</a>
+            </li>
+            <li class="footer__contacts-menu-item">
+                <a class="footer__contacts-menu-item-link" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+            </li>
+        </ul>
+    </div>
 </footer>
 </body>
 </html>

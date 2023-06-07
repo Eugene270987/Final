@@ -10,50 +10,94 @@
 </head>
 <body>
 <header class="header">
-    <div class="header__top-bar">
-        <div class="header__language-menu">
-            <a href="#" aria-label="Ukrainian">ук</a>
-            <a href="#" aria-label="Russian">ру</a>
-            <a href="#" aria-label="English">en</a>
-        </div>
-        <svg class="icon">
-            <use xlink:href="img/sprite.svg#separator"></use>
-        </svg>
-        <a href="#" class="header__address">Kyiv, Mechnikova str., 14/1</a>
-        <svg class="icon">
-            <use xlink:href="img/sprite.svg#separator"></use>
-        </svg>
-        <a class="header__contacts" href="tel:0800211927" aria-label="0800211927">0800 211 927</a>
-        <svg class="icon">
-            <use xlink:href="img/sprite.svg#separator"></use>
-        </svg>
-        <a class="facebook__link" href="#" aria-label="our facebook">
-            <svg class="icon__facebook">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-            </svg>
-        </a>
-    </div>
+    <a class="header__menu-link" href="#">
+        <img class="header__menu-logo" src="img/logo.png" alt="Hlegal-logo">
+    </a>
+    <ul class="header__top-menu">
+        <li>
+            <ul class="header__top-menu-language">
+                <li class="header__top-menu-language-item">
+                    <a
+                            class="header__top-menu-language-link"
+                            href="#"
+                            aria-label="Ukrainian"
+                    >ук</a>
+                </li>
+                <li class="header__top-menu-language-item">
+                    <a
+                            class="header__top-menu-language-link"
+                            href="#"
+                            aria-label="Russian"
+                    >ру</a
+                    >
+                </li>
+                <li class="header__top-menu-language-item">
+                    <a
+                            class="header__top-menu-language-link"
+                            href="#"
+                            aria-label="English"
+                    >en</a
+                    >
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="header__top-menu-contacts">
+                <li class="header__top-menu-contacts-item">
+                    <a href="#" class="header__top-menu-contacts-link"
+                    >Kyiv, Mechnikova str., 14/1</a
+                    >
+                </li>
+                <li class="header__top-menu-contacts-item">
+                    <a
+                            class="header__top-menu-contacts-link"
+                            href="tel:0800211927"
+                            aria-label="0800211927"
+                    >
+                        0800 211 927
+                    </a>
+                </li>
+                <li class="header__top-menu-contacts-item">
+                    <a
+                            class="header__top-menu-contacts-link"
+                            href="#"
+                            aria-label="our facebook"
+                    >
+                        <svg
+                                width="24"
+                                height="25"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                    d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                    fill="white"
+                            />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
     <div class="header__menu">
-        <a href="#">
-            <img src="/img/logo.svg" alt="Hlegal-logo">
-        </a>
         <input type="checkbox" id="nav-toggle" class="visually-hidden">
-        <nav class="header__navbar">
-            <ul class="header__navbar-list">
-                <li class="header__navbar-item">
-                    <a href="" class="header__navbar__link">about us</a>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__list-item">
+                    <a href="" class="navbar__list-link">about us</a>
                 </li>
-                <li class="header__navbar-item">
-                    <a href="" class="header__navbar__link">services</a>
+                <li class="navbar__list-item">
+                    <a href="services.html" class="navbar__list-link">services</a>
                 </li>
-                <li class="header__navbar-item">
-                    <a href="" class="header__navbar__link">team</a>
+                <li class="navbar__list-item">
+                    <a href="" class="navbar__list-link">team</a>
                 </li>
-                <li class="header__navbar-item">
-                    <a href="" class="header__navbar__link">publications</a>
+                <li class="navbar__list-item">
+                    <a href="" class="navbar__list-link">publications</a>
                 </li>
-                <li class="header__navbar-item">
-                    <a href="" class="header__navbar__link">contact</a>
+                <li class="navbar__list-item">
+                    <a href="" class="navbar__list-link">contact</a>
                 </li>
             </ul>
         </nav>

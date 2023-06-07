@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-size: 14px;
@@ -21,8 +24,8 @@ h1, h2, h3, h4, h5,h6{
 }
 
 .container{
-  padding-left: calc(50vw - 172px);
-  padding-right: calc(50vw - 172px);
+  padding-left: calc(50vw - 157px);
+  padding-right: calc(50vw - 157px);
 
   @media screen and (min-width: 520px) {
     padding-left: calc(50vw - 230px);

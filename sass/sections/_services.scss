@@ -36,7 +36,8 @@
   &__section-link{
     display: flex;
     align-items: center;
-
+    max-width: 100px;
+    width: 100%;
     &:visited {
       color: var(--activeRegular);
     }
