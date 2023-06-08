@@ -131,7 +131,7 @@
     &__contacts{
       &-menu{
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         gap: 26px;
         &-item{
@@ -189,7 +189,7 @@
       grid-column: span 2;
       &-menu{
         display: flex;
-        flex-direction: row;
+        justify-content: flex-start;
         align-items: center;
         padding-top: 0;
       }
