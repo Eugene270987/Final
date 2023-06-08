@@ -10,10 +10,39 @@
 </head>
 <body>
 <header class="header">
-    <a class="header__menu-link" href="index.html">
-        <img class="header__menu-logo" src="img/logo.png" alt="Hlegal-logo">
-    </a>
-    <ul class="header__top-menu">
+    <div class="header__mobile container">
+        <a class="header__mobile-link" href="index.html">
+            <img class="header__mobile-logo" src="img/logo.png" alt="Hlegal-logo">
+        </a>
+        <div class="header__mobile-menu">
+            <input type="checkbox" id="nav-toggle" class="visually-hidden">
+            <nav class="header__mobile-menu-navbar">
+                <ul class="header__mobile-menu-navbar-list">
+                    <li class="header__mobile-menu-navbar-list-item">
+                        <a href="index.html" class="header__mobile-menu-navbar-list-link">about us</a>
+                    </li>
+                    <li class="header__mobile-menu-navbar-list-item">
+                        <a href="services.html" class="header__mobile-menu-navbar-list-link">services</a>
+                    </li>
+                    <li class="header__mobile-menu-navbar-list-item">
+                        <a href="#" class="header__mobile-menu-navbar-list-link">team</a>
+                    </li>
+                    <li class="header__mobile-menu-navbar-list-item">
+                        <a href="#" class="header__mobile-menu-navbar-list-link">publications</a>
+                    </li>
+                    <li class="header__mobile-menu-navbar-list-item">
+                        <a href="#" class="header__mobile-menu-navbar-list-link">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </div>
+    <ul class="header__top-menu container">
         <li>
             <ul class="header__top-menu-language">
                 <li class="header__top-menu-language-item">
@@ -80,8 +109,7 @@
             </ul>
         </li>
     </ul>
-    <div class="header__menu">
-        <input type="checkbox" id="nav-toggle" class="visually-hidden">
+    <div class="header__menu container">
         <nav class="navbar">
             <ul class="navbar__list">
                 <li class="navbar__list-item">
@@ -101,11 +129,6 @@
                 </li>
             </ul>
         </nav>
-        <label for="nav-toggle" class="nav-switch">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
     </div>
 </header>
 <main class="main">
