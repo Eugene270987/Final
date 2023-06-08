@@ -98,21 +98,15 @@
 }
 
 @media screen and (min-width: 767px) {
-
-}
-
-@media screen and (min-width: 1024px) {
   .footer{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
     &__address{
       &-menu{
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: center;
+        margin-left: -100px;
+        margin-bottom: 20px;
         &-item{
           &:first-child{
             position: relative;
@@ -134,19 +128,12 @@
         }
       }
     }
-    &__rights{
-      padding-top: 0;
-      justify-self: end;
-      order: 0;
-    }
     &__contacts{
-      padding-top: 10px;
-      grid-column: span 2;
       &-menu{
-        display: flex;
         flex-direction: row;
-        gap: 26px;
+        justify-content: flex-start;
         align-items: center;
+        gap: 26px;
         &-item{
           &:first-child{
             padding-top: 0;
@@ -172,6 +159,39 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: center;
+    &__address{
+      &-menu{
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+    }
+    &__rights{
+      padding-top: 0;
+      justify-self: end;
+      order: 0;
+    }
+    &__contacts{
+      padding-top: 10px;
+      grid-column: span 2;
+      &-menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 0;
       }
     }
   }
